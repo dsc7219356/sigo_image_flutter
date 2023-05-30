@@ -5,7 +5,7 @@
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, "power_image_jni", __VA_ARGS__)
 
 extern "C" JNIEXPORT jlong JNICALL
-Java_example.sigo_image_flutter.request_SigoImageExternalRequest_getByteBufferPtr(
+Java_com.example.sigo_image_flutter.request_SigoImageExternalRequest_getByteBufferPtr(
         JNIEnv* env,
         jobject clazz,
         jobject byte_buffer) {
@@ -14,7 +14,7 @@ Java_example.sigo_image_flutter.request_SigoImageExternalRequest_getByteBufferPt
 }
 
 extern "C" JNIEXPORT jlong JNICALL
-Java_example.sigo_image_flutter.request_SigoImageExternalRequest_getBitmapPixelsPtr(
+Java_com.example.sigo_image_flutter.request_SigoImageExternalRequest_getBitmapPixelsPtr(
         JNIEnv* env,
         jobject clazz,
         jobject bitmap) {
@@ -28,7 +28,7 @@ Java_example.sigo_image_flutter.request_SigoImageExternalRequest_getBitmapPixels
 }
 
 extern "C" JNIEXPORT void JNICALL
-Java_example.sigo_image_flutter.request_SigoImageExternalRequest_releaseBitmapPixels(
+Java_com.example.sigo_image_flutter.request_SigoImageExternalRequest_releaseBitmapPixels(
         JNIEnv* env,
         jobject clazz,
         jobject bitmap) {
