@@ -5,7 +5,7 @@
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, "power_image_jni", __VA_ARGS__)
 
 extern "C" JNIEXPORT jlong JNICALL
-Java_com_taobao_power_1image_request_PowerImageExternalRequest_getByteBufferPtr(
+Java_example.sigo_image_flutter.request_SigoImageExternalRequest_getByteBufferPtr(
         JNIEnv* env,
         jobject clazz,
         jobject byte_buffer) {
@@ -14,7 +14,7 @@ Java_com_taobao_power_1image_request_PowerImageExternalRequest_getByteBufferPtr(
 }
 
 extern "C" JNIEXPORT jlong JNICALL
-Java_com_taobao_power_1image_request_PowerImageExternalRequest_getBitmapPixelsPtr(
+Java_example.sigo_image_flutter.request_SigoImageExternalRequest_getBitmapPixelsPtr(
         JNIEnv* env,
         jobject clazz,
         jobject bitmap) {
@@ -28,7 +28,7 @@ Java_com_taobao_power_1image_request_PowerImageExternalRequest_getBitmapPixelsPt
 }
 
 extern "C" JNIEXPORT void JNICALL
-Java_com_taobao_power_1image_request_PowerImageExternalRequest_releaseBitmapPixels(
+Java_example.sigo_image_flutter.request_SigoImageExternalRequest_releaseBitmapPixels(
         JNIEnv* env,
         jobject clazz,
         jobject bitmap) {

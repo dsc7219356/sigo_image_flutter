@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class SigoImageExternalRequest extends SigoImageBaseRequest {
 
-    private static final String TAG = "PowerImageExternalRequest";
+    private static final String TAG = "SigoImageExternalRequest";
 
     private static final int FLUTTER_PIXEL_FORMAT_RGBA8888 = 0;
     private static final int FLUTTER_PIXEL_FORMAT_BGRA8888 = 1;
