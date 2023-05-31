@@ -17,6 +17,7 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 
 /** SigoImageFlutterPlugin */
+//public class SigoImageFlutterPlugin implements FlutterPlugin, MethodCallHandler {
 public class SigoImageFlutterPlugin implements FlutterPlugin, MethodCallHandler {
   /// The MethodChannel that will the communication between Flutter and native Android
   ///
@@ -30,6 +31,9 @@ public class SigoImageFlutterPlugin implements FlutterPlugin, MethodCallHandler 
     return sContext;
   }
 
+  static {
+    System.loadLibrary("sigoimageflutter");
+  }
   @Override
   public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
     if(sContext == null){

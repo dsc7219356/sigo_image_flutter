@@ -35,7 +35,7 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: SigoImage.network('https://images.vsigo.cn/products/contacts/700-700/202355111244471.jpg'),
+          child: SigoImage.network('https://images.vsigo.cn/products/contacts/700-700/202355111244471.jpg',renderingType:renderingTypeExternal ,),
         ),
       ),
     );
