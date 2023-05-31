@@ -61,3 +61,12 @@ Java_com_example_sigo_1image_1flutter_request_SigoImageExternalRequest_releaseBi
         LOGE("AndroidBitmap_unlockPixels failed : %d", ret);
     }
 }
+
+extern "C"
+JNIEXPORT jlong JNICALL
+Java_com_example_sigo_1image_1flutter_request_SigoImageExternalRequest_getByteBufferPtr(JNIEnv *env,
+                                                                                        jobject thiz,
+                                                                                        jobject byte_buffer) {
+    jbyte *cData = (jbyte*)env->GetDirectBufferAddress(byte_buffer);//获取指针
+    return (jlong)cData;
+}

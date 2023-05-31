@@ -9,6 +9,7 @@ import android.os.Build;
 import com.example.sigo_image_flutter.loader.FlutterMultiFrameImage;
 import com.example.sigo_image_flutter.loader.SigoImageResult;
 
+import java.nio.ByteBuffer;
 import java.util.Map;
 
 public class SigoImageExternalRequest extends SigoImageBaseRequest {
@@ -103,6 +104,7 @@ public class SigoImageExternalRequest extends SigoImageBaseRequest {
         return encodedRequest;
     }
 
+    public native long getByteBufferPtr(ByteBuffer byte_buffer);
     public native long getBitmapPixelsPtr(Bitmap bitmap);
 
     public native void releaseBitmapPixels(Bitmap bitmap);
